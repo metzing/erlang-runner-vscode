@@ -1,6 +1,7 @@
 -module(main). 
 -export([start/0]).
 -import(other, [echo/1]).
+-import(kishf1, [cella/2]).
 
 start() -> 
    main().
@@ -8,4 +9,12 @@ start() ->
 % MODIFY FROM HERE
 
 main() ->
-      io:fwrite(khf1:cella("Hello", "World")).
+      io:write(khf1:cella([[0,8,0,2,3,4,1,0,5],
+                           [0,0,9,0,5,0,4,0,1],
+                           [8,0,0,2,9,6,1,0,4],
+                           [0,2,1,7,8,0,0,0,0],
+                           [0,3,9,0,5,7,2,0,7],
+                           [0,4,0,8,2,9,6,1,3],
+                           [0,1,0,9,0,5,0,4,0],
+                           [0,5,0,6,0,2,7,3,9],
+                           [0,0,0,0,0,0,0,0,0]], 4)).
